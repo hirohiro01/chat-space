@@ -6,7 +6,7 @@
 |email|string|null: false|
 |password|string|null: false|
 ### Association
-- has_many :group, through: :groups_users
+- has_many :groups, through: :groups_users
 - has_many :comments
 - has_many :groups_users
 
@@ -17,7 +17,7 @@
 |group_id|integer|null: false|
 |name|string|null: false|
 ### Association
-- has_many :user, through: :groups_users
+- has_many :users, through: :groups_users
 - has_many :comments
 - has_many :groups_users
 
