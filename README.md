@@ -7,7 +7,7 @@
 |password|string|null: false|
 ### Association
 - has_many :group, through: :groups_users
-- has_many :comment
+- has_many :comments
 
 
 ## groups テーブル
@@ -17,7 +17,7 @@
 |group_name|string|null: false|
 ### Association
 - has_many :user, through: :groups_users
-- has_many :comment
+- has_many :comments
 
 
 ## groups_users テーブル
