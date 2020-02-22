@@ -14,7 +14,6 @@
 ## groups テーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null: false|
 |name|string|null: false|
 ### Association
 - has_many :users, through: :groups_users
@@ -26,6 +25,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :group
 - belongs_to :user
